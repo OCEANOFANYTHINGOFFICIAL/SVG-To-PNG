@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description"
+            content="This is a simple online tool that allows you to convert SVG (Scalable Vector Graphics) files to PNG (Portable Network Graphics) format. It provides an easy way to convert vector-based graphics to raster images.">
+        <meta name="keywords"
+            content="SVG, PNG, SVG to PNG, SVG to PNG Converter, SVG to PNG Online, SVG to PNG Converter Online, SVG to PNG Converter Web, SVG to PNG Web, SVG to PNG Online Converter, SVG to PNG Web Converter, SVG to PNG Converter Web Tool, SVG to PNG Online Tool, SVG to PNG Web Tool, SVG to PNG Converter Online Tool, SVG to PNG Converter Web Tool, SVG to PNG Online Converter Tool, SVG to PNG Web Converter" />
+        <meta name="author" content="OCEAN OF ANYTHING">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="index, follow">
+        <meta name="bingbot" content="index, follow">
+        <meta name="revisit-after" content="7 days">
+        <meta name="language" content="English">
+        <meta name="distribution" content="global">
+        <meta name="rating" content="general">
+        <meta name="url" content="https://oceanofanythingofficial.github.io/SVG-To-PNG/">
+        <meta name="identifier-URL" content="https://oceanofanythingofficial.github.io/SVG-To-PNG/">
+        <meta name="category" content="Internet">
+        <meta name="content-language" content="en">
+        <meta property="og:title" content="SVG to PNG Converter">
+        <meta property="og:url" content="https://oceanofanythingofficial.github.io/SVG-To-PNG/">
+        <meta property="og:image" content="https://oceanofanythingofficial.github.io/SVG-To-PNG/preview.png">
+        <meta property="og:description"
+            content="This is a simple online tool that allows you to convert SVG (Scalable Vector Graphics) files to PNG (Portable Network Graphics) format. It provides an easy way to convert vector-based graphics to raster images.">
+        <meta property="og:site_name" content="SVG to PNG Converter">
+        <meta property="og:locale" content="en">
+        <meta property="og:type" content="website">
+        <meta property="og:updated_time" content="2024-07-01">
+        <meta property="og:see_also" content="https://oceanofanythingofficial.github.io/SVG-To-PNG/">
+        <meta property="og:twitter:url" content="https://oceanofanythingofficial.github.io/SVG-To-PNG/">
+        <meta property="og:twitter:title" content="SVG to PNG Converter">
+        <meta property="og:twitter:description"
+            content="This is a simple online tool that allows you to convert SVG (Scalable Vector Graphics) files to PNG (Portable Network Graphics) format. It provides an easy way to convert vector-based graphics to raster images.">
+        <meta property="og:twitter:image" content="https://oceanofanythingofficial.github.io/SVG-To-PNG/preview.png">
+        <meta property="og:twitter:site" content="@OceanAnything">
+        <meta property="og:twitter:creator" content="@OceanAnything">
+        <meta property="og:twitter:card" content="summary_large_image">
+        <meta property="og:twitter:site" content="@OceanAnything">
+        <meta property="og:twitter:creator" content="@OceanAnything">
+        <meta property="og:twitter:image:alt" content="SVG to PNG Converter">
+        <meta property="og:twitter:domain" content="https://oceanofanythingofficial.github.io/SVG-To-JPG/">
+        <meta property="og:twitter:creator:id" content="OceanAnything">
+    <title>SVG To PNG Converter</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="header">
+        <div class="logo"
+            style="width: 50px; text-align: center;">
+            <img id="logo1"
+                src="png.png">
+        </div>
+        <div
+            style="width: 80%; text-align: center;">
+            <h1>
+                SVG to PNG Converter
+            </h1>
+        </div>
+    </div>
+    <div class="previewContainer">
+
+        <input type="file"
+            id="svgFileInput"
+            accept=".svg"
+            style="display: none;">
+        <div id="svgPreview">
+            <img id="imagePreview"
+                src="CloudUploading.webp"
+                onclick="svgFileInput.click()"
+                alt="SVG Preview">
+            <p id="previewName"
+                style="color: #4f4c5e;">
+                Click Here to Upload SVG
+            </p>
+        </div>
+
+
+    </div>
+    <div class="controls">
+        <button id="convertButton"
+            onclick="convertToPNG()">
+            Convert
+        </button>
+        <button id="downloadButton"
+            style="display: none;"
+            onclick="downloadPNG()">
+            Download PNG
+        </button>
+        <button id="resetButton"
+            onclick="reset()">
+            Reset
+        </button>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
